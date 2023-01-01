@@ -7,6 +7,7 @@ type Fruit ={
     unit:string;
 }
 
+
 //Fetch data from server using getFruits() method
 
 function getFruits() {
@@ -16,6 +17,7 @@ fetch("http://localhost:3000/fruits").then((res: any) => (res = res.json()))
 });
   
 }
+
 
 //Inside transform() method, iterate the json data and transform each fruit to transformedFruit object that mirrors Fruit type
 
